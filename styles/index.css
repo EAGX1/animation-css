@@ -1,0 +1,49 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    height: 10vh;
+    border-bottom: 1px solid #2196f3;
+    background-color: #021937;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 40px;
+    font-size: 20px;
+    color: rgb(216, 22, 22);
+}
+
+img {
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+    animation: imgZoom 3.5s ease infinite;
+    animation-direction: reverse;
+    animation-fill-mode: none;
+    
+}
+
+img:hover {
+    animation-play-state: paused;
+}
+
+@keyframes imgZoom {
+	0% {transform: scale(1) rotate(0deg);}
+	50% {transform: scale(1.1) rotate(15deg);}
+	100% {transform: scale(1) rotate(0deg);}
+}
+
+.btn {
+    background-color: rgb(29, 235, 2);
+}
+
+.btn:hover {
+    background-color: rgb(31, 42, 199);
+    transition: all 1s ease-in-out;
+    transition-delay: 0.5s;
+}
